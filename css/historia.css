@@ -263,3 +263,122 @@ header a :hover::after{
         font-size: 1em;
     }
 }
+#timeline {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+    position: relative;
+    padding: 40px 0;
+    
+}
+
+#timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 4px;
+    height: 100%;
+    background: #e8ad72;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.timeline-item-left,
+.timeline-item-right {
+    width: 48%;
+    position: relative;
+    margin-bottom: 40px;
+    padding: 20px 30px;
+    background: #1b1b1c;
+    color: #e9e8e5;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+}
+.timeline-item-left:hover,
+.timeline-item-right:hover {
+    transform: scale(1.05) translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+.timeline-item-left {
+    left: 0;
+    text-align: right;
+    margin-right: 4%;
+    
+}
+
+.timeline-item-right {
+    left: 50%;
+    text-align: left;
+    margin-left: 4%;
+}
+
+.timeline-item-left .date,
+.timeline-item-right .date {
+    font-weight: bold;
+    color: #e8ad72;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    
+}
+
+@media (max-width: 900px) {
+    #timeline {
+        width: 98%;
+        padding: 10px 0;
+    }
+    #timeline::before {
+        left: 20px;
+        width: 3px;
+    }
+    .timeline-item-left,
+    .timeline-item-right {
+        width: 90%;
+        left: 0 !important;
+        margin: 0 0 30px 20px;
+        text-align: left;
+    }
+    .timeline-item-right {
+        margin-left: 20px;
+    }
+}
+footer{
+    background-color: #1b1b1c;
+    
+}
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e8ad72;
+    text-align: center;
+
+    
+}
+footer, 
+footer .container, 
+footer .container * {
+    color: #e8ad72 !important;
+    text-decoration: none;}
+
+footer a:hover {
+    color: #e9e8e5 !important;
+}
+footer a {
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
+    margin: 6px 0;
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+.footer-name h3{
+    font-size: 2em;
+}
