@@ -149,7 +149,7 @@ header a :hover::after{
     z-index: 2;
 }
 #featured-watches{
-    background-color: #e9e8e5;
+    background-color: #cececd;
     text-align: center;
     color: #2e2e2f;
     
@@ -349,4 +349,190 @@ footer a {
     justify-content: center;
     width: auto;
 
+}
+.footer-icons a {
+  margin: 0 8px;
+  transition: transform 0.3s ease;
+}
+
+.footer-icons a:hover {
+  transform: scale(1.1);
+}
+.footer-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.historia-section-white{
+  background-color: #bb9066;
+  padding: 60px 40px;
+  font-family: 'Poppins', sans-serif;
+  border-top: 1px solid #d4a373;
+  color: #e9e8e5;
+}
+.historia-section-black{
+  background-color: #1b1b1c;
+  padding: 60px 40px;
+  font-family: 'Poppins', sans-serif;
+  border-top: 1px solid #d4a373;
+  color:#e9e8e5
+}
+
+.historia-section-black h2,
+.historia-section-white h2 {
+  font-size: 32px;
+  color: #e9e8e5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.historia-section-black p,
+.historia-section-white p{
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #e9e8e5;
+}
+
+.historia-section-black ol,
+.historia-section-white ol {
+  padding-left: 0;
+  color: #e9e8e5;
+  font-size: 20px;
+  font-family: 'Poppins',sans-serif;
+}
+
+.historia-section-black ol li,
+.historia-section-white ol li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+  color: #e9e8e5;
+}
+
+@media (max-width: 900px) {
+  header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav {
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+
+  .cards {
+    width: 180px;
+    height: auto;
+  }
+
+  .watch-info h3 {
+    font-size: 1em;
+  }
+
+  .watch-info p {
+    font-size: 0.95em;
+  }
+
+  .rating {
+    font-size: 1em;
+  }
+
+  .button2 {
+    font-size: 0.95em;
+    padding: 6px 10px;
+  }
+
+  .hero-p {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  .cards {
+    width: 90%;
+    height: auto;
+  }
+
+  .watch-info {
+    padding: 10px;
+  }
+
+  .button1,
+  .button2,
+  .button3 {
+    font-size: 1em;
+    padding: 8px 16px;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .historia-section-white,
+  .historia-section-black {
+    padding: 40px 20px;
+  }
+
+  .historia-section-white h2,
+  .historia-section-black h2 {
+    font-size: 24px;
+  }
+
+  .historia-section-white p,
+  .historia-section-black p,
+  .historia-section-white ol li,
+  .historia-section-black ol li {
+    font-size: 16px;
+  }
+
+  #short-history {
+    padding: 40px 20px;
+  }
+
+  #short-history h2 {
+    font-size: 2em;
+  }
+
+  .timeline {
+    padding-left: 20px;
+  }
+
+  .timeline-dot {
+    left: -30px;
+  }
+
+  .timeline-content {
+    font-size: 1em;
+  }
+
+  .content-short-history p {
+    font-size: 1em;
+    padding: 0 10px;
+  }
+
+  footer a {
+    font-size: 1.2em;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
