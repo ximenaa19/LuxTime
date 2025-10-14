@@ -77,8 +77,28 @@ header a :hover::after{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
-}
 
+}
+.filtrado h3{
+  color: #e8ad72;
+  font-size: 25px;
+}
+.filtrado nav{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+}
+.filtrado select {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2e2e2f;
+  color: #e9e8e5;
+  font-family: 'Poppins', sans-serif;
+}
 /* Tarjeta de producto */
 .product-card {
   display: grid;
@@ -241,5 +261,9 @@ footer a {
     text-align: center;
     font-size: 15px;
     padding: 10px 14px;
+  }
+  .filtrado select {
+    width: 100%;
+    margin: 10px 0;
   }
 }
